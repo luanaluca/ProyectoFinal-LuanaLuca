@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styleslogreg.css">
+        <link rel="stylesheet" href="modal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--<script defer src="modalLogin.js"></script>-->
+        <script defer src="modalCarrito.js"></script>
+        <script defer src="cursos.js"></script>
+        <script defer src="app.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>Rame Visual</title>
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo">
+                <a href="./index.html"><img src="./imagenes/logo.jpg" alt="Logo de la empresa" ></a>  
+            </div>
+        </nav>
+    </header>
+
+    <section class="section padding">
+        <h2 class="section__title">Regístrate</h2>
+        <form id="form-registro" class="form">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <label>Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" class="button" id="btn-registro">Registrar</button>
+            <br>
+            <a href="./login.html">¿Ya tienes cuenta? Inicia sesión.</a>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./login.js"></script>
+    <script>
+        document.getElementById('btn-registro').addEventListener('click', ( e ) => {
+            e.preventDefault();
+            sesion.registrarUsuario()
+        });
+    </script>
+
+</body>
+</html>

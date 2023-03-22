@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rame Visual</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleslogreg.css">
+    <link rel="stylesheet" href="modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--<script defer src="modalLogin.js"></script>-->
+    <script defer src="modalCarrito.js"></script>
+    <script defer src="cursos.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="logo">
+            <a href="./index.html"><img src="./imagenes/logo.jpg" alt="Logo de la empresa" ></a>  
+        </div>
+             
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+           <a class="nav-link" href="#" id="saludo-usuario">Hola</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html" id="register-btn">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html" id="login-btn">Iniciar Sesion</a>
+          </li>
+          <li class="nav-item"><button id="boton-carrito" onclick="openModal(modalCarrito)"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main id="contenedor-cursos">
+    
+
+    </main>
+
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: USD <span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+
+    
+    
+
+   <!-- <div id="modal-login" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal(modalLogin)">&times;</span>
+        <h2>Iniciar Sesion</h2>
+        <form id="login-form">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        </div>
+    </div>
+
+    <div id="modal-register" class="modal">
+        <div class="modal-content">
+        <span class="close"onclick="closeModal(modalRegister)">&times;</span>
+        <h2>Registrarse</h2>
+        <form id="register-form">
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    </div>-->
+
+    
+    </body>
+    </html>
+       
